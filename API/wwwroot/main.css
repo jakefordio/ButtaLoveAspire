@@ -1,0 +1,119 @@
+html, body {
+    box-sizing:border-box;
+    overflow-x: hidden;
+}
+
+main {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.loading {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+nav{
+    position: fixed !important;
+    height: 68px !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link{
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #171717;
+}
+
+nav img.logo {
+    position: relative !important;
+    top: .67em;
+    left: 6px;
+    z-index: 6;
+}
+
+main#content{
+    min-height: calc(100vh - 95px);
+    margin-top: 95px;
+}
+
+.carousel-item {
+    height: calc(62vh - 66px);
+    margin-top: 66px;
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-attachment: fixed;
+}
+
+.carousel-caption {
+    width: 47vw;
+    padding: .35em;
+    margin: 0 auto;
+    border: 6px solid #000;
+    background-color: rgba(0, 0, 0, .63);
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.18em;
+    font-style: normal;
+}
+.carousel-indicators [data-bs-target]{
+    background-color: #000 !important;
+    padding: 1.45% !important;
+}
+.carousel-indicators{
+    width: 12%;
+    position: absolute;
+    bottom: -1.4em !important;
+    margin: 0 auto !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev{
+    background-color: transparent !important;
+    top: 13.6% !important;
+    opacity: 1 !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    opacity: 1 !important;
+    height: 3.4em !important;
+    width: 3.4em !important;
+    margin-bottom: -1% !important;
+    padding: 8% !important;
+    background-color: rgba(0, 0, 0, .4) !important;
+    border-radius: 14% !important;
+}
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon{
+    background-color: rgba(0, 0, 0, 1) !important;
+    transition: background-color 0.7s ease-in-out;
+}
+
+.caption_heading {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 600;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.97); /* Base shadow for instant legibility */
+}
+
+#testing{
+    padding: 10em 1em !important;
+    margin: 0 auto;
+}
+
+footer{
+    height: 42vh;
+    padding: 3.5%;
+    background-color: #232323;
+}
+

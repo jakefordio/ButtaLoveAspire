@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Services/">
+    <Project Path="API/API.csproj" />
+    <Project Path="SearchSvc/SearchSvc.csproj" />
+  </Folder>
+  <Project Path="ButtaLoveAspire.AppHost/ButtaLoveAspire.AppHost.csproj" />
+  <Project Path="ButtaLoveAspire.ServiceDefaults/ButtaLoveAspire.ServiceDefaults.csproj" />
+</Solution>

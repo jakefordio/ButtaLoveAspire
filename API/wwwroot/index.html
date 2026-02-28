@@ -1,0 +1,95 @@
+<!doctype html>
+<!--suppress HtmlRequiredAltAttribute -->
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="ButtaLove Mantequilla-Amor - Personal Care Products"/>
+    <meta name="author" content="Annessia Scott"/>
+    <title>ButtaLove Mantequilla-Amor - Personal Care Products</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico"/>
+    <!-- Bootstrap icons CSS -->
+    <link href="/lib/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet"/>
+    <!-- Core theme CSS (includes Bootstrap) -->
+    <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- Toastr -->
+    <link href="/lib/toastr/toastr.min.css" rel="stylesheet"/>
+    <!-- Custom CSS -->
+    <link type="text/css" href="main.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Loading Overlay -->
+<div id="loading_overlay"
+     class="d-none position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-white bg-opacity-90"
+     style="z-index: 999999;">
+    <div class="text-center">
+        <!-- Using the 'text-primary' color (your Butta yellow) -->
+        <div class="spinner-border text-primary" role="status" style="width: 4rem; height: 4rem;">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="mt-2 fw-bold text-secondary">Preparing your ButtaLove...</div>
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="/">
+            <img alt="ButtaLove Mantequilla-Amor Logo" src="images/buttalove-logo.png" class="logo"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link link active" aria-current="page" href="/" data-link>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link" href="#about" data-link>About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="products_dropdown" href="#" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+                    <ul class="dropdown-menu" aria-labelledby="products_dropdown">
+                        <li><a class="dropdown-item nav-link link" href="#products">All Products</a></li>
+                        <li>
+                            <hr class="dropdown-divider"/>
+                        </li>
+                        <li><a class="dropdown-item nav-link link" href="#popular">Popular Items</a></li>
+                        <li><a class="dropdown-item nav-link link" href="#new">New Arrivals</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link" href="#contact" data-link>Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="admin_dropdown" href="#" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Admin</a>
+                    <ul class="dropdown-menu" aria-labelledby="admin_dropdown">
+                                <li>
+                                    <a class="dropdown-item nav-link link" href="#testing">Testing</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <button class="btn btn-outline-dark" type="submit">
+                    <i class="bi-cart-fill me-1"></i>
+                    Cart
+                    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- Content tag containing each page's HTML -->
+<main id="content" class="container-fluid"></main>
+<footer>
+
+</footer>
+<script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="/lib/toastr/toastr.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

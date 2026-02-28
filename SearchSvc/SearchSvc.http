@@ -1,0 +1,6 @@
+@SearchSvc_HostAddress = http://localhost:5051
+
+GET {{SearchSvc_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
