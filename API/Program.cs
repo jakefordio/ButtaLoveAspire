@@ -53,6 +53,12 @@ public class Program
 
         app.MapControllers();
 
+        app.MapControllerRoute(
+            name: "spa-fallback",
+            pattern: "{*url}",
+            defaults: new { controller = "Home", action = "Index" }
+        );
+
         app.Use(async (context, next) =>
         {
             var request = context.Request;
