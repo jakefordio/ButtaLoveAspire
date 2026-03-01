@@ -1,4 +1,4 @@
-<div class="container">
+<div id="testing_container" class="container">
     <div id="testing" class="row">
         <div class="col-md-6 my-4">
             <h3>HTTP Status Codes</h3>
@@ -16,4 +16,9 @@
         </div>
     </div>
 </div>
-<script defer type="text/javascript" src="scripts/errorTesting.js"></script>
+<script data-execute="true">
+    (async () => {
+        const { startErrorTesting } = await import('/scripts/modules/errorTesting.js');
+        startErrorTesting;
+    })();
+</script>
